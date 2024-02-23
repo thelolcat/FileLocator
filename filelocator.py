@@ -5,7 +5,7 @@ current_dir = os.path.abspath(os.getcwd())
 files = os.listdir()
 dirlist = []
 
-while continue:
+while loop:
         text = input("FileLocator >> ")
         if text != "":
                 find()
