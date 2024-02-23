@@ -2,7 +2,6 @@ import os
 
 text = ""
 current_dir = os.path.abspath(os.getcwd())
-print(current_dir)
 files = os.listdir()
 dirlist = []
 loop = 1
