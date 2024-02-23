@@ -4,7 +4,7 @@ text = ""
 current_dir = os.path.abspath(os.getcwd())
 files = os.listdir()
 dirlist = []
-loop = true
+loop : bool
 
 def find():
         files = os.listdir()
