@@ -4,13 +4,7 @@ text = ""
 current_dir = os.path.abspath(os.getcwd())
 files = os.listdir()
 dirlist = []
-
-while loop:
-        text = input("FileLocator >> ")
-        if text != "":
-                find()
-        else:
-                break
+loop = true
 
 def find():
         files = os.listdir()
@@ -28,3 +22,10 @@ def nextdir():
         else:
                 os.chdir(current_dir)
                 print("--------")
+
+while loop:
+        text = input("FileLocator >> ")
+        if text != "":
+                find()
+        else:
+                break
