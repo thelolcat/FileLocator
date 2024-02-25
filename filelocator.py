@@ -1,3 +1,5 @@
+# WARNING! This script has errors in it.
+# Will be corrected soon
 import os
 
 text = ""
