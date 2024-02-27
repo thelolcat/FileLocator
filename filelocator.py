@@ -3,7 +3,7 @@ Trust me, you shouldn't use this in your root folder
 I wonder why I built this... -thelolcat"""
 import os
 
-text : string
+text: string
 current_dir = os.path.abspath(os.getcwd())
 dirlist = []
 LOOP = 1
