@@ -1,27 +1,29 @@
-#FileLocator. Smaller, but still as slow as the default file searcher you get in your system
-#Trust me, you shouldn't use this in your root folder
-#I wonder why I built this... -thelolcat
+"""FileLocator. Smaller, but still as slow as the default file searcher you get in your system
+Trust me, you shouldn't use this in your root folder
+I wonder why I built this... -thelolcat"""
 import os
 
-text = ""
+TEXT = ""
 current_dir = os.path.abspath(os.getcwd())
-files = os.listdir()
+files = []
 dirlist = []
 LOOP = 1
 
-#examines files in a folder and checks if it contains "text" (NOT CASE SENSITIVE)
+
 def find():
+    """examines files in a folder and checks if it contains "text" (NOT CASE SENSITIVE)"""
     files = os.listdir()
     for file in files:
-        if text.lower() in file.lower():
+        if TEXT.lower() in file.lower():
             print(os.path.abspath(file))
         if os.path.isdir(file):
             dirlist.append(os.path.abspath(file))
     nextdir()
 
 
-#changes cwd to next folder to be examined and changes cwd to original folder once search is fully completed
 def nextdir():
+    """changes cwd to next folder to be examined and changes cwd to original folder 
+    once search is fully completed"""
     dirloop = 1
     while len(dirlist) != 0 and dirloop == 1:
         try:
@@ -33,10 +35,10 @@ def nextdir():
     if len(dirlist) == 0:
         os.chdir(current_dir)
 
-print("FileLocator loaded. Enter file to be searched(not case sensitive) or enter blank to exit program")
+print("FileLocator loaded. Enter file to be searched(not case sensitive) or enter blank to exit")
 while LOOP == 1:
-    text = input("FileLocator >> ")
-    if text != "":
+    TEXT = input("FileLocator >> ")
+    if TEXT != "":
         find()
         print("----------------")
     else:
