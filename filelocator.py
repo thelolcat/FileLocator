@@ -5,7 +5,6 @@ import os
 
 TEXT = ""
 current_dir = os.path.abspath(os.getcwd())
-files = []
 dirlist = []
 LOOP = 1
 
