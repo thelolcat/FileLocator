@@ -1,4 +1,5 @@
 #FileLocator. Smaller, but still as slow as the default file searcher you get in your system
+#Trust me, you shouldn't use this in your root folder
 #I wonder why I built this... -thelolcat
 import os
 
