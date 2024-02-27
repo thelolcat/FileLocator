@@ -1,3 +1,5 @@
+#FileLocator. Smaller, but still as slow as the default file searcher you get in your system
+#I wonder why I built this... -thelolcat
 import os
 
 text = ""
